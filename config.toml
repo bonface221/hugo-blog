@@ -1,0 +1,171 @@
+# General Settings
+title = "Creative Developers"
+baseURL = "" #YOUR SITE URL
+languageCode = "en-us"
+theme = "terio"
+resourceDir = "resources"
+paginate = 6
+summaryLength = 20
+DefaultContentLanguage = "en"
+
+# Menu Settings
+[menu]
+[[menu.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  identifier = "about"
+
+  name = "About"
+  url = "/about/"
+  weight = 2
+[[menu.main]]
+  identifier = "team"
+
+  name = "Team"
+  url = "/team/"
+  weight = 3
+[[menu.main]]
+  identifier = "services"
+ 
+  name = "Services"
+  url = "/services/"
+  weight = 4
+[[menu.main]]
+  identifier = "pricing"
+ 
+  name = "Pricing"
+  url = "/pricing/"
+  weight = 5
+
+[[menu.main]]
+  identifier = "portfolio"
+  name = "Portfolio"
+  url = "/portfolio/"
+  weight = 6
+
+ 
+[[menu.main]]
+  identifier = "blog"
+  name = "Blog"
+  url = "/blog/"
+  weight = 7
+
+[[menu.main]]
+  identifier = "contact"
+  name = "Contact"
+  url = "/contact/"
+  weight = 8
+
+# Main Settings
+[params]
+dateFormat = "January 2, 2006"
+authorName = "Jane Luna"
+disqusComments = "test" #YOUR DISQUS COMMENTS SHORTNAME
+formspreeURL = "" #YOUR FORMSPREE URL
+googleAnalytics = "" #YOUR GOOGLE ANALYTICS CODE
+introBackground = "images/background.jpg"
+headerBackground = "images/header.jpg"
+relatedPostsLimit = 4
+
+# Preloader Settings
+[params.preloader]
+logo = "images/logo.png"
+
+# Header Settings
+[params.header]
+[params.header.logo]
+image = "images/logo.png"
+alt = "logo"
+title = "creativedevelopers"
+[params.header.button]
+text = "Get Started"
+link = "/contact/"
+
+# Footer Settings
+[params.footer]
+description = "Creative Developers is a digital agency offering bespoke website solutions and comprehensive social media management services."
+copyright = "© 2023 creativedevelopers - All Rights Reserved"
+[params.footer.menu]
+title = "Additional Links"
+[[params.footer.menu.list]]
+title = "About Us"
+link = "/about/"
+[[params.footer.menu.list]]
+title = "Services"
+link = "/services/"
+[[params.footer.menu.list]]
+title = "Team"
+link = "/team/"
+[[params.footer.menu.list]]
+title = "News"
+link = "/blog/"
+[[params.footer.menu.list]]
+title = "Contact Us"
+link = "/contact/"
+[params.footer.news]
+title = "Latest News"
+numOfItems = 2
+[params.footer.subscribe]
+title = "Subscribe"
+text = "Get exclusive insights and discounts - subscribe now!."
+[params.footer.subscribe.mailchimp]
+url = "" #YOUR MAILCHIMP EMBED FORM URL [form action=""]
+key = "" #YOUR MAILCHIMP EMBED FORM KEY VALUE [input hidden name=""]
+
+# Social Settings
+[[params.social]]
+title = "Facebook"
+icon = "fa-brands fa-facebook-f"
+url = "https://www.facebook.com/"
+weight = 1
+[[params.social]]
+title = "Twitter"
+icon = "fa-brands fa-twitter"
+url = "https://www.twitter.com/"
+weight = 2
+[[params.social]]
+title = "Instagram"
+icon = "fa-brands fa-instagram"
+url = "https://www.instagram.com/"
+weight = 3
+[[params.social]]
+title = "Medium"
+icon = "fa-solid fa-m"
+url = "https://www.medium.com/"
+weight = 4
+[[params.social]]
+title = "Linkedin"
+icon = "fa-brands fa-linkedin-in"
+url = "https://www.linkedin.com/"
+weight = 5
+
+# Portfolio Settings
+[params.portfolio]
+homeNumOfItems = 12
+[[params.portfolio.filters]]
+name = "Design"
+slug = "design"
+[[params.portfolio.filters]]
+name = "Print"
+slug = "print"
+[[params.portfolio.filters]]
+name = "Branding"
+slug = "branding"
+
+# Sitemap Settings
+[sitemap]
+changefreq = "monthly"
+priority = 0.5
+filename = "sitemap.xml"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
